@@ -16,19 +16,19 @@
 
 <body>
 
-    <section id = "calcolo_biglietto" class = "d_flex">
+    <section id="calcolo_biglietto" class = "d_flex">
         <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-        <div class = "card_rounded">
-                <div class = "row d_flex">
-                    <div class = "col d_flex">
+        <div class="card_rounded">
+                <div class="row d_flex">
+                    <div class="col d_flex">
                         <label for="name"> Nome e Cognome</label>
-                        <input type="text" name="name" id="full_name">
+                        <input type="text" name="namesurname" placeholder ="Inserisci il tuo nome" id="full_name">
                     </div>
-                    <div class = "col d_flex">
+                    <div class="col d_flex">
                         <label for="km"> Km da percorrere</label>
-                        <input type="number" name="km" id="km">
+                        <input type="number" name="km" placeholder = "Inserisci i km" id="km">
                     </div>
-                    <div class = "col d_flex">
+                    <div class="col d_flex">
                         <label for="fascia"> Fascia di età</label>
                         <select name="fascia" id ="fascia">
                             <option value ="minorenne"> Minorenne</option> 
@@ -38,8 +38,8 @@
                     </div>
                 </div>
 
-                <div class ="row d_flex">
-                    <button id = "btn_genera">Genera</button> 
+                <div class="row d_flex">
+                    <button id="btn_genera">Genera</button> 
                     <button id="btn_annulla">Annulla</button>
                 </div>
         </div>
@@ -55,6 +55,7 @@
                             <h4>NOME PASSEGGERO</h4>
                         </div>
                     </div>
+                    
                     <div class="col d_flex">
                         <div id="sconto">
                             <h4>Offerta</h4>

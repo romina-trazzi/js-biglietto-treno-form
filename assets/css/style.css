@@ -80,6 +80,12 @@ button {
 
 button:hover {
     border-color: purple;
+    background-color: grey;
+}
+
+input, select:hover {
+    background-color: #b91450;
+    color: white;
 }
 
 
@@ -103,3 +109,6 @@ button:hover {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
+/*=====  End of biglietto  ======*/
