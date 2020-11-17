@@ -118,7 +118,11 @@ input, select:hover {
     margin-right: 15px;
 }
 
+tbody {
+    margin-top: 40px;
+}
 
-
-
+#nome_passeggero {
+    font-weight: bold;
+}
 /*=====  End of biglietto  ======*/

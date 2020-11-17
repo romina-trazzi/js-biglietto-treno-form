@@ -44,10 +44,13 @@ btnGenera.addEventListener("click", function () {
     // Creiamo il blocco if per applicare gli sconti 
     if (fascia == "minorenne") {
         resultPrice = ticketPrice - (ticketPrice * 0.2);
+        sconto  = "Sconto minorenne"
     } else if (fascia == "over 65") {
         resultPrice = ticketPrice - (ticketPrice * 0.4);
+        sconto = "Sconto silver"
     } else {
         resultPrice = ticketPrice;
+        sconto = "Nessuno sconto"
     }
 
     // Generiamo un numero intero random per la carrozza
