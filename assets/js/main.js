@@ -44,7 +44,7 @@ btnGenera.addEventListener("click", function () {
     // Creiamo il blocco if per applicare gli sconti 
     if (fascia == "minorenne") {
         resultPrice = ticketPrice - (ticketPrice * 0.2);
-    } else if (fascia == "over65") {
+    } else if (fascia == "over 65") {
         resultPrice = ticketPrice - (ticketPrice * 0.4);
     } else {
         resultPrice = ticketPrice;
@@ -63,7 +63,7 @@ btnGenera.addEventListener("click", function () {
     var elSconto = document.getElementById("sconto");
     var elCarrozza = document.getElementById("carrozza");
     var elCodice = document.getElementById("codice_cp");
-    var elTicket = document.getElementById("result_price");
+    var elTicket = document.getElementById("ticket_price");
     
 
     // Sostituiamo le variabili JS appena create con i valori dell'HTML
