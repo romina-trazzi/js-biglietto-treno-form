@@ -58,7 +58,7 @@ btnGenera.addEventListener("click", function () {
     // codiceCp genera un numero intero compreso tra 
     
 
-    // Creiamo variabili JS per collegarle ai div HTML  
+    // Creiamo variabili JS per collegarle ai th HTML  
     var elName = document.getElementById("nome_passeggero");
     var elSconto = document.getElementById("sconto");
     var elCarrozza = document.getElementById("carrozza");
@@ -67,25 +67,30 @@ btnGenera.addEventListener("click", function () {
     
 
     // Sostituiamo le variabili JS appena create con i valori dell'HTML
-    elName.innerHTML = full_name;
+    elName.innerHTML = fullName;
     elSconto.innerHTML = sconto;
     elCarrozza.innerHTML = numberCarrozza;
     elCodice.innerHTML = codiceCp;
     elTicket.innerHTML = resultPrice.toFixed(2) + "€";
 
+    /*document.getElementById("biglietto").classList.add("visible")*/;
     document.getElementById("biglietto").style.display = "block";
 
 });
 
-
+/* Creiamo una funzione di ascolto per l'evento click su btnAnnulla
+che ora è anche una variabile JS per svuotare le variabili */
 btnAnnulla.addEventListener("click", function () {
 
     // console.log("Annulla operazione")
 
-    var fullName = document.getElementById("full_name").value = "";
-    var km = document.getElementById("km").value = "";
-    var fascia = document.getElementById("fascia").value = "Maggiorenne";
+    document.getElementById("full_name").value = "";
+    document.getElementById("km").value = "";
+    document.getElementById("fascia").value = "Maggiorenne";
 
     document.getElementById("biglietto").style.display = "none";
+    /*document.getElementById("biglietto").classList.add("hidden")*/
+    
+    
 
 }); 
