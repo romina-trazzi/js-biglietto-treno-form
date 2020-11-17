@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #b91450;
+} 
+
+
+h2 {
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+.card_rounded, .card_squared {
+    background-color: white;
+    padding: 20px 40px;
+    width: 50%;
+}
+
+.card_rounded {
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+}
+
+
+/* CLASSI UTILITY */
+
+.d_flex {
+  display: flex; 
+} 
+
+.row {
+    justify-content: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+
+/* End of classi utility */
+
+
+
+/*===============================================
+    =            CALCOLO BIGLIETTO            =
+=================================================*/
+
+#calcolo_biglietto, #biglietto {
+	flex-direction: column;
+	align-items: center;
+}
+
+input, select {
+    margin: 10px;
+    border-color:  #b91450;
+    border-radius: 5px;
+    text-align: center;
+}
+
+label {
+    color:  #b91450;
+    margin: 10px;
+}
+
+button {
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    color: #b91450;
+    font-weight: bolder;
+}
+
+button:hover {
+    border-color: purple;
+}
+
+
+
+/*=====  End of calcolo biglietto  ======*/
+
+
+/*===============================================
+        =           BIGLIETTO            =
+=================================================*/
+
+#nome_passeggero {
+    background-color: grey;
+    color: black;
+}
+
+.card_squared .row {
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

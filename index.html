@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta properties -->
+    <meta name="author" content="Romina Trazzi">
+    <meta name="description" content="Esercizio biglietti del treno Javascript con form">
+    <meta name="keywords" content="javascript, biglietti del treno, blocco if">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Esercizio biglietti del treno con JavaScript - Form </title>
+</head>
+
+<body>
+
+    <section id = "calcolo_biglietto" class = "d_flex">
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <div class = "card_rounded">
+                <div class = "row d_flex">
+                    <div class = "col d_flex">
+                        <label for="name"> Nome e Cognome</label>
+                        <input type="text" name="name" id="full_name">
+                    </div>
+                    <div class = "col d_flex">
+                        <label for="km"> Km da percorrere</label>
+                        <input type="number" name="km" id="km">
+                    </div>
+                    <div class = "col d_flex">
+                        <label for="fascia"> Fascia di età</label>
+                        <select name="fascia" id ="fascia">
+                            <option value ="minorenne"> Minorenne</option> 
+                            <option value="maggiorenne"> Maggiorenne</option>
+                            <option value="over 65"> Over 65</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class ="row d_flex">
+                    <button id = "btn_genera">Genera</button> 
+                    <button id="btn_annulla">Annulla</button>
+                </div>
+        </div>
+    </section>
+
+    <section id="biglietto" class = "d_flex">
+        <h2>IL TUO BIGLIETTO</h2>
+            <div class="card_squared">
+              <h3>DETTAGLIO PASSEGGERI</h3>
+                <div class="row d_flex">
+                    <div class="col d_flex">
+                        <div id="nome_passeggero"> 
+                            <h4>NOME PASSEGGERO</h4>
+                        </div>
+                    </div>
+                    <div class="col d_flex">
+                        <div id="sconto">
+                            <h4>Offerta</h4>
+                        </div>
+                    </div>
+                    <div class="col d_flex">
+                        <div id="carrozza">
+                            <h4>Carrozza</h4>
+                        </div>
+                    </div>
+                    <div class="col d_flex">
+                        <div id="codice_cp">
+                            <h4>Codice CP</h4>
+                        </div>
+                    </div>
+                    <div class="col d_flex">
+                        <div id="ticket_price">
+                            <h4>Costo Biglietto</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+    </section>
+    
+   
+   
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
