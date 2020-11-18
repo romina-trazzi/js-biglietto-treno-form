@@ -77,7 +77,7 @@ btnGenera.addEventListener("click", function () {
     elTicket.innerHTML = resultPrice.toFixed(2) + "€";
 
     /*document.getElementById("biglietto").classList.add("visible")*/;
-    document.getElementById("biglietto").style.display = "block";
+    document.getElementById("biglietto").style.display = "flex";
 
 });
 
